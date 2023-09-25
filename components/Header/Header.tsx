@@ -10,7 +10,7 @@ import {
   BsBell,
   BsChevronDown,
   BsSearch,
-} from "react-icons/Bs";
+} from "react-icons/bs";
 
 
 const TOP_OFFSET = 66;
