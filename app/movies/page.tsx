@@ -27,15 +27,15 @@ export default async function Movies() {
   return (
     <>
       <section className="relative flex h-screen flex-col pt-32 justify-between">
-      <Preview billboard={trendingNow.results[Math.floor(Math.random() * trendingNow.results.length)]}/>
+      <Preview billboard={trendingNow?.results[Math.floor(Math.random() * trendingNow?.results.length)]}/>
       </section>
       <section className="-mt-36">
-        <MovieRow title="Trends" movies={trendingNow.results} />
-        <MovieRow title="Documentaries" movies={documentaries.results} />
-        <MovieRow title="Horrors" movies={horrorMovies.results} />
-        <MovieRow title="Actions" movies={actionMovies.results} />
-        <MovieRow title="Comedies" movies={comedyMovies.results} />
-        <MovieRow title="Romances" movies={romanceMovies.results} />
+        <MovieRow title="Trends" movies={trendingNow?.results} />
+        <MovieRow title="Documentaries" movies={documentaries?.results} />
+        <MovieRow title="Horrors" movies={horrorMovies?.results} />
+        <MovieRow title="Actions" movies={actionMovies?.results} />
+        <MovieRow title="Comedies" movies={comedyMovies?.results} />
+        <MovieRow title="Romances" movies={romanceMovies?.results} />
       </section>
       <Modal/>
     </>   

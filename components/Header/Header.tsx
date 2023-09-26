@@ -89,14 +89,14 @@ function Header() {
             New & Popular
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               className={`link ${pathname === '/list' ? 'text-white cursor-default underline' : 'text-gray-200 hover:text-gray-300 cursor-pointer transition'}`}
               href="/list"
             >
             My List
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div  onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
           <p className="text-gray-200 hover:text-gray-300 cursor-pointer transition">Browse</p>

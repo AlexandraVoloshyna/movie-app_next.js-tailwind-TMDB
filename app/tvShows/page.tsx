@@ -26,14 +26,14 @@ export default async function Shows() {
   return (
     <>
       <section className="relative flex h-screen flex-col pt-32 justify-between">
-      <Preview billboard={trendingNow.results[Math.floor(Math.random() * trendingNow.results.length)]}/>
+      <Preview billboard={trendingNow?.results[Math.floor(Math.random() * trendingNow?.results.length)]}/>
       </section>
       <section className="-mt-36">
-        <MovieRow title="Trends" movies={trendingNow.results} />
-        <MovieRow title="Top 10 " movies={topShows.results} />
-        <MovieRow title="Comedies" movies={comedyShows.results} />
-        <MovieRow title="Dramas" movies={dramaShows.results} />
-        <MovieRow title="On Air" movies={onAir.results} />
+        <MovieRow title="Trends" movies={trendingNow?.results} />
+        <MovieRow title="Top 10 " movies={topShows?.results} />
+        <MovieRow title="Comedies" movies={comedyShows?.results} />
+        <MovieRow title="Dramas" movies={dramaShows?.results} />
+        <MovieRow title="On Air" movies={onAir?.results} />
       </section>
       <Modal/>
     </>   

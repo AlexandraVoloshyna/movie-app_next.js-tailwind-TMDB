@@ -47,14 +47,14 @@ function MobileMenu ({ visible }:Props) {
             New & Popular
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
              className="px-3 text-center text-white hover:underline"
               href="/list"
             >
             My List
             </Link>
-          </li>
+          </li> */}
       </ul>
     </nav>
   )
